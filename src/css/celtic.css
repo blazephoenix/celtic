@@ -1,0 +1,14 @@
+/* navigation variables */
+/* button variables */
+/* typography */
+/* change color based on background color */
+/* generate shade and tint color palettes */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: normal normal 300 1em/1.15 Arial;
+}
+/*# sourceMappingURL=celtic.css.map */

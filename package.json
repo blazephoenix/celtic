@@ -1,0 +1,11 @@
+{
+  "name": "celtic",
+  "version": "1.0.0",
+  "description": "Celtic is a responsive CSS framework for perfectionists without deadlines.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

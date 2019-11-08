@@ -1,0 +1,20 @@
+  
+  /* change color based on background color */
+@function changeColor($bg){
+    @if lightness($bg)>50{
+        @return shade($bg, 80%);
+    }
+    @else {
+        @return tint($bg, 90%);
+    } 
+}
+
+/* generate shade and tint color palettes */
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+  }
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
