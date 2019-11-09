@@ -1,3 +1,4 @@
+/* color scheme */
 /* navigation variables */
 /* button variables */
 /* typography */
@@ -9,8 +10,51 @@
           box-sizing: border-box;
 }
 
+.navbar {
+  height: 50px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    height: auto;
+  }
+}
+
+.navbar ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 14px;
+  margin-top: 0;
+}
+
+.navbar ul li:first-child {
+  margin-left: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font: normal normal 300 1em/1.15 Arial;
+  display: block;
+  line-height: 18px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width: 800px) {
+  .navbar ul li a {
+    line-height: 40px;
+  }
+}
+
 body {
   font: normal normal 300 1em/1.15 Arial;
-  background: #121212;
 }
 /*# sourceMappingURL=celtic.css.map */

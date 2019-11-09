@@ -2,8 +2,8 @@
 @import "reset";
 
 @include reset;
+@include navbar;
 
 body{
     @include typography;
-    background: $color-primary;
 }

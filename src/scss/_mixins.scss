@@ -1,6 +1,22 @@
 @import "variables";
 @import "functions";
 
+@mixin typography(
+    $font-style:$font-style,
+    $font-variant: $font-variant,
+    $font-weight: $font-weight,
+    $font-size: $font-size,
+    $line-height: $line-height,
+    $font-family: $font-family
+){
+    font: $font-style $font-variant $font-weight $font-size#{"/"}$line-height $font-family;
+}
+
+@mixin anchor-tags{
+	text-decoration: none;
+	@include typography;
+}
+
 @mixin navbar($height:$navbar-height,$linkmargin: $navbar-item-margin,$breakpoint: 800px){
     .navbar{
     height: $navbar-height;
@@ -16,6 +32,7 @@
 			margin-top: 0;
 			&:first-child{margin-left: 0;}
 			a{
+				@include anchor-tags;
 				display: block;
 				line-height: ($height - (2 * $linkmargin));
 				margin-top: $linkmargin;
@@ -29,15 +46,4 @@
 		}
     }
 }
-}
-
-@mixin typography(
-    $font-style:$font-style,
-    $font-variant: $font-variant,
-    $font-weight: $font-weight,
-    $font-size: $font-size,
-    $line-height: $line-height,
-    $font-family: $font-family
-){
-    font: $font-style $font-variant $font-weight $font-size#{"/"}$line-height $font-family;
 }
